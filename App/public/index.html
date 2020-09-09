@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <title>Ejercicios</title>
+</head>
+<body>
+    <header>
+
+        <h1>Rutina de Ejercicios</h1>
+        <h2>Elija Rutina</h2>
+            
+        <select class="select" id="select">
+            <option value="" selected></option>
+            <option value="1">60/25</option>
+            <option value="2">30/10</option>
+        </select>
+
+    </header> 
+    
+  <main class="contenedor"> 
+        <div class="selector">
+            <div class="list">
+                <ul id="ul">
+                </ul>
+            </div>
+        </div>    
+
+
+            <form action="" class="form" id="form">
+                <label for="Ejercicio"><input type="checkbox" id="Ejercicio"> Plancha</label> 
+                <label for="Ejercicio2"><input type="checkbox" id="Ejercicio2"> Trote en el lugar</label> 
+                <label for="Ejercicio3"><input type="checkbox" id="Ejercicio3"> Sentadillas</label> 
+                <label for="Ejercicio4"><input type="checkbox" id="Ejercicio4"> Burpee</label>
+                <label for="Ejercicio5"><input type="checkbox" id="Ejercicio5"> Salto con cuerda</label>
+                <label for="Ejercicio6"><input type="checkbox" id="Ejercicio6"> Abodominales</label>
+                <label for="Ejercicio7"><input type="checkbox" id="Ejercicio7"> Zancada o lounge </label>
+                <label for="Ejercicio8"><input type="checkbox" id="Ejercicio8"> Placha de Costado </label>    
+
+                <button type="button" id="add">Añadir</button>
+
+
+                <h4>Contador</h4>
+                <h6 id="info"></h6>
+                <div class="contador"><span id="span"></span></div>
+
+                <input type="button" id="btn" value="Iniciar" ></input>
+                <input type="button" id="reset" value="Resetear"></input>
+            </form>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
