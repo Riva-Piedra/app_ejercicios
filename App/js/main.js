@@ -25,7 +25,7 @@ function define(){
     if(ul.children.length == 0){    /* Comprabamos si hay ejercicios en lista, si es asi seguimos */
         alert('agrege ejercicios');
         add.removeAttribute('disabled', "");
-        btn.setAttribute('disabled', "");
+        btn.setAttribute('disabled',  "");
         return false
     } 
 
