@@ -20,10 +20,12 @@ restart.addEventListener('click', reset)
 //------------------------------------------
 function define(){
     add.setAttribute('disabled', "");
+    btn.setAttribute('disabled', "");
     let o = document.getElementById('select');
     if(ul.children.length == 0){    /* Comprabamos si hay ejercicios en lista, si es asi seguimos */
-        alert('agrege ejercicios')
-        add.removeAttribute('disabled', "")
+        alert('agrege ejercicios');
+        add.removeAttribute('disabled', "");
+        btn.setAttribute('disabled', "");
         return false
     } 
 
@@ -96,21 +98,22 @@ function getExercies() {  /* Trae los ejercicios seleccionados y los suma a la l
     for (let i = 0; i < form.length; i++) {
         
             if (form[i].checked == true){
-                let element = document.createElement('li')
-                element.innerHTML = form.children[i].textContent
+                let element = document.createElement('li');
+                element.innerHTML = form.children[i].textContent;
                 ul.appendChild(element);
             } 
         }
     }
-//----------------------------------------------------
+//------------------------------------------------------
 
 function reset(){  /* Pone todo a "0" */
     let result = confirm('Desea resetear?')
-        if(result == true){
-            info.innerHTML = ""
-            add.removeAttribute('disabled', "")
-            ul.innerHTML = "";
-            o.setAttribute('style', 'display: inline');
-            timer.innerHTML = "";
-        }
+
+    if(result == true){
+        info.innerHTML = ""
+        add.removeAttribute('disabled', "")
+        ul.innerHTML = "";
+        o.setAttribute('style', 'display: inline');
+        timer.innerHTML = "";
+    }
 }
